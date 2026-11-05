@@ -8,6 +8,8 @@
 /* ---------- Variables ---------- */
 
 :root {
+  color-scheme: dark;
+
   --black: #0c0c0f;
   --surface: #17171c;
   --surface-light: #212128;
@@ -68,6 +70,16 @@ a:active {
   color: var(--mango-dark);
 }
 
+/* Oculta un texto a la vista, pero lo sigue leyendo un lector de pantalla */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 
 /* ---------- Cabecera ---------- */
 
@@ -118,4 +130,182 @@ a:active {
   to {
     opacity: 0;
   }
+}
+
+
+/* ---------- Contenido principal ---------- */
+
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 2.5rem 4rem;
+}
+
+
+/* ---------- Insignia y buscador ---------- */
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 6rem;
+}
+
+.badge {
+  padding: 0.2rem 0.8rem;
+  background-color: var(--mango);
+  color: var(--black);
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.search {
+  width: 260px;
+  padding: 0.6rem 1rem;
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: var(--font-text);
+  font-size: 0.9rem;
+  transition: width 0.3s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.search::placeholder {
+  color: var(--muted);
+}
+
+.search:hover {
+  border-color: var(--mango-dark);
+}
+
+.search:focus {
+  width: 320px;
+  border-color: var(--mango);
+  box-shadow: 0 0 14px rgba(255, 159, 28, 0.35);
+}
+
+.search:focus-visible {
+  outline: 2px solid var(--mango-light);
+  outline-offset: 2px;
+}
+
+.search:active {
+  background-color: var(--surface-light);
+}
+
+
+/* ---------- Cuadrícula de podcasts ---------- */
+
+.podcasts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6rem 1.75rem;
+}
+
+
+/* ---------- Tarjeta de podcast ---------- */
+
+.card__link {
+  display: block;
+  position: relative;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.card__link:focus-visible {
+  border-radius: var(--radius);
+}
+
+.card__image {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  margin-left: -70px;
+  border: 4px solid var(--black);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--mango);
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card__body {
+  position: relative;
+  height: 100%;
+  padding: 5.25rem 1rem 1.9rem;
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-align: center;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.card__title {
+  color: var(--text);
+  font-family: var(--font-title);
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.card__author {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+/* La frase del tema está fuera de la tarjeta y sube al pasar el ratón */
+.card__text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.6rem 0.9rem;
+  background-image: linear-gradient(90deg, var(--mango), var(--mango-dark));
+  color: var(--black);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.35;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.card__link:hover,
+.card__link:focus-visible {
+  transform: translateY(-8px);
+}
+
+.card__link:hover .card__image,
+.card__link:focus-visible .card__image {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 2px var(--mango-light), 0 0 30px rgba(255, 159, 28, 0.6);
+}
+
+.card__link:hover .card__body,
+.card__link:focus-visible .card__body {
+  border-color: var(--mango);
+  box-shadow: 0 14px 34px rgba(255, 159, 28, 0.18);
+}
+
+.card__link:hover .card__title,
+.card__link:focus-visible .card__title {
+  color: var(--mango);
+}
+
+.card__link:hover .card__text,
+.card__link:focus-visible .card__text {
+  transform: translateY(0);
+}
+
+.card__link:active {
+  transform: translateY(-2px) scale(0.98);
 }

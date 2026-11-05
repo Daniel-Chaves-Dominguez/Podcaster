@@ -7,6 +7,7 @@
   <meta name="author" content="Daniel Chaves Domínguez">
   <title>Podcaster</title>
 
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/duzljw2pp/image/upload/v1793879685/favicon_mznzfg.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,6 +23,238 @@
   </header>
 
   <main class="main">
+
+    <section class="toolbar" aria-label="Filtro de podcasts">
+      <p class="badge">20<span class="visually-hidden"> podcasts</span></p>
+      <label for="search" class="visually-hidden">Filtrar podcasts</label>
+      <input type="search" id="search" class="search" placeholder="Filter podcasts...">
+    </section>
+
+    <section class="podcasts">
+      <h2 class="visually-hidden">Temas del podcast</h2>
+
+      <article class="card">
+        <a href="podcast.html#asesinos" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879687/asesinos_gxprgs.jpg" alt="Hombre mayor de barba gris con una máscara en la cabeza" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Asesinos en serie</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Los criminales más perturbadores, contados caso a caso.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#sin-resolver" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879687/sin-resolver_c6wfhy.jpg" alt="Hombre con la cara cubierta de escarcha" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Crímenes sin resolver</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Casos reales que siguen sin respuesta años después.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#imperfectos" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879686/imperfectos_fp25tb.jpg" alt="Retrato de un hombre joven mirando de frente" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Crímenes imperfectos</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Crímenes casi perfectos que acabaron delatando al culpable.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#naufragios" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879686/naufragios_mala0q.jpg" alt="Marinero barbudo con cicatrices en plena tormenta" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Naufragios</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Sobrevivir en mitad del mar cuando ya no queda barco.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#aereas" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879687/aereas_edytrg.jpg" alt="Piloto con la cara cubierta por un pasamontañas" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Catástrofes aéreas</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Vuelos que acabaron en tragedia o en un milagro.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#historia" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879686/historia_hdxih2.jpg" alt="Inquisidor con mitra y gesto severo" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">La terrible historia</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">De la Prehistoria a la Inquisición: la cara más dura del pasado.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#mafias" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879685/mafias_aksha6.jpg" alt="Mafioso de rostro curtido señalando al frente" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Mafias</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">De la Yakuza a la Bratva: secretos, leyendas y castigos.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#robos" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879687/robos_nulnne.jpg" alt="Atracador con gorra apuntando con una pistola" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Robos imposibles</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Los golpes maestros más famosos de la historia.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#fugas" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879685/fugas_cdsiav.jpg" alt="Preso con una cinta en la frente y la cara herida" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Fugas imposibles</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Escapar de un infierno del que nadie debía salir.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#secuestros" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879687/secuestros_gr8bgd.jpg" alt="Hombre calvo con un osito de peluche al hombro" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Secuestros</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">El horror del cautiverio y el precio de seguir vivo.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#sectas" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879687/sectas_i1vdbe.jpg" alt="Líder de una secta con capucha" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Sectas</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Manipulación, terror y fanatismo en historias reales.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#desastres" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879685/desastres_e1osgl.jpg" alt="Persona con máscara antigás y capucha amarilla" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Grandes desastres</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Pompeya, Chernóbil, la Peste Negra: cuando todo se derrumba.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#mitologia" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879686/mitologia_x5qwoo.jpg" alt="Rey Mono con los ojos encendidos" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Mitología</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Dioses y leyendas de Grecia, Japón, Egipto y muchos más.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#paranormal" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879686/paranormal_nigohy.jpg" alt="Mujer de pelo largo con lágrimas de sangre" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Lo paranormal</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Misterios que nadie puede explicar y lugares embrujados.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#misterios" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879685/misterios_cg2n3e.jpg" alt="Explorador con la cara manchada de barro" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Grandes misterios</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Civilizaciones perdidas y los enigmas del universo.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#experimentos" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879685/experimentos_copvck.jpg" alt="Rostro herido y cosido bajo una capucha" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Experimentos médicos</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">El lado oscuro de la ciencia, con casos reales.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#religion" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879686/religion_yhpwlr.jpg" alt="Anciano de larga barba blanca" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Los secretos de Dios</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">La Biblia, Jesús de Nazaret y la pregunta de si existe Dios.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#paises" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879686/paises_edlvfp.jpg" alt="Soldado con boina roja" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Países al límite</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Corea del Norte, Cuba y los lugares más peligrosos del mundo.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#documentales" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879685/documentales_db1tzp.jpg" alt="Presentador entre aletas de orcas en aguas heladas" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Documentales</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Salen a grabarlo: de nadar con orcas a las catacumbas de París.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="podcast.html#charlas" class="card__link">
+          <img src="https://res.cloudinary.com/duzljw2pp/image/upload/f_auto,q_auto,w_300/v1793879685/charlas_nf750h.jpg" alt="Presentador de Black Mango hablando al micrófono" class="card__image" width="140" height="140">
+          <div class="card__body">
+            <h3 class="card__title">Charlas y actualidad</h3>
+            <p class="card__author">Author: Black Mango</p>
+            <p class="card__text">Los primeros programas, con invitados y temas de actualidad.</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
   </main>
 
 </body>
