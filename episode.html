@@ -17,7 +17,15 @@
 
   <header class="header">
     <p class="header__title">
-      <a href="index.html" class="header__link">Podcaster</a>
+      <a href="index.html" class="header__link">
+        <span class="equalizer" aria-hidden="true">
+          <span class="equalizer__bar"></span>
+          <span class="equalizer__bar"></span>
+          <span class="equalizer__bar"></span>
+          <span class="equalizer__bar"></span>
+        </span>
+        <span class="header__name">Podcaster</span>
+      </a>
     </p>
     <div class="loader" aria-hidden="true"></div>
   </header>
@@ -58,7 +66,15 @@
       </div>
 
       <div class="episode__player">
-        <p class="episode__label">Escucha un fragmento de 3 minutos:</p>
+        <p class="episode__label">
+          <span class="equalizer" aria-hidden="true">
+            <span class="equalizer__bar"></span>
+            <span class="equalizer__bar"></span>
+            <span class="equalizer__bar"></span>
+            <span class="equalizer__bar"></span>
+          </span>
+          Escucha un fragmento de 3 minutos:
+        </p>
         <audio controls preload="metadata" class="episode__audio" src="https://res.cloudinary.com/duzljw2pp/video/upload/v1793881629/naufragios-fragmento_p6wfmc.mp3">
           Tu navegador no puede reproducir este audio.
         </audio>
