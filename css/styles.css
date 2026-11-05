@@ -1,0 +1,121 @@
+/* =========================================================
+   Podcaster - Black Mango
+   Hoja de estilos principal
+   Autor: Daniel Chaves Domínguez (2º DAW)
+   ========================================================= */
+
+
+/* ---------- Variables ---------- */
+
+:root {
+  --black: #0c0c0f;
+  --surface: #17171c;
+  --surface-light: #212128;
+  --mango: #ff9f1c;
+  --mango-light: #ffc247;
+  --mango-dark: #f26b21;
+  --text: #f6f1e9;
+  --muted: #aaa49c;
+  --line: #2e2e36;
+
+  --font-title: 'Bebas Neue', Impact, sans-serif;
+  --font-text: 'Montserrat', Arial, sans-serif;
+
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ---------- Base ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--text);
+  font-family: var(--font-text);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--mango);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--mango-light);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--mango-light);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+a:active {
+  color: var(--mango-dark);
+}
+
+
+/* ---------- Cabecera ---------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.header__title {
+  font-family: var(--font-title);
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.header__link {
+  display: block;
+}
+
+
+/* ---------- Indicador de carga ---------- */
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--line);
+  border-top-color: var(--mango);
+  border-radius: 50%;
+  animation-name: loader-spin, loader-fade;
+  animation-duration: 0.6s, 0.3s;
+  animation-delay: 0s, 0.9s;
+  animation-iteration-count: 2, 1;
+  animation-timing-function: linear, ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-fade {
+  to {
+    opacity: 0;
+  }
+}
