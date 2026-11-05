@@ -86,7 +86,8 @@ a:active {
 .card__title,
 .sidebar__title,
 .episodes-count,
-.table__theme {
+.table__theme,
+.episode__title {
   font-family: var(--font-title);
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -97,7 +98,8 @@ a:active {
 .card__body,
 .sidebar,
 .episodes-count,
-.table-box {
+.table-box,
+.episode {
   background-color: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -234,7 +236,8 @@ a:active {
   transition: transform 0.3s;
 }
 
-.card__link:focus-visible {
+.card__link:focus-visible,
+.sidebar__link:focus-visible {
   border-radius: var(--radius);
 }
 
@@ -351,6 +354,24 @@ a:active {
   margin: 0 auto;
   border-radius: var(--radius);
   box-shadow: 0 0 24px rgba(255, 159, 28, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* En el detalle del episodio la imagen es un enlace a podcast.html */
+.sidebar__link {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.sidebar__link:hover .sidebar__image,
+.sidebar__link:focus-visible .sidebar__image {
+  transform: scale(1.04);
+  box-shadow: 0 0 34px rgba(255, 159, 28, 0.55);
+}
+
+.sidebar__link:active .sidebar__image {
+  transform: scale(0.98);
 }
 
 .sidebar__block {
@@ -495,4 +516,71 @@ a:active {
 
 .table__youtube:active {
   transform: scale(0.95);
+}
+
+
+/* ---------- Detalle del episodio ---------- */
+
+.episode {
+  padding: 1.5rem 2rem;
+}
+
+.episode__title {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.episode__description p,
+.episode__chapters {
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.episode__description strong {
+  color: var(--mango-light);
+  font-weight: 600;
+}
+
+.episode__chapters {
+  padding-left: 1.2rem;
+}
+
+/* Los enlaces dentro de un texto van subrayados para distinguirlos */
+.sidebar__text a,
+.episode__description a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.episode__player {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.episode__label {
+  margin-bottom: 0.6rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.episode__audio {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  transition: box-shadow 0.3s;
+}
+
+.episode__audio:hover {
+  box-shadow: 0 0 18px rgba(255, 159, 28, 0.4);
+}
+
+.episode__audio:focus-visible {
+  outline: 2px solid var(--mango-light);
+  outline-offset: 3px;
+}
+
+.episode__audio:active {
+  box-shadow: 0 0 8px rgba(255, 159, 28, 0.6);
 }
