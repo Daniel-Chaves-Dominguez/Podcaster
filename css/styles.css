@@ -179,7 +179,7 @@ a:active {
 
 /* ---------- Imagen de fondo ---------- */
 
-/* Los presentadores arriba, en negro y naranja, fundiéndose con el negro de la página */
+/* Los presentadores arriba, fundiéndose con el negro de la página */
 .background {
   position: absolute;
   top: 0;
@@ -188,26 +188,22 @@ a:active {
   width: 100%;
   height: 470px;
   overflow: hidden;
-  background-color: var(--mango);
-  opacity: 0.5;
+  opacity: 0.62;
   -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent);
   mask-image: linear-gradient(to bottom, black 40%, transparent);
 }
 
-/* La imagen en blanco y negro se multiplica con el naranja del fondo: queda en dos tonos */
 .background__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 50% 58%;
-  filter: grayscale(1) contrast(1.2);
-  mix-blend-mode: multiply;
 }
 
 /* En podcast y episodio las cajas tapan el centro: se ve solo la playa y más suave */
 .background--soft {
   height: 320px;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .background--soft .background__image {
@@ -263,7 +259,7 @@ a:active {
   align-items: center;
   gap: 0.6rem;
   width: fit-content;
-  margin: 0 0 13rem auto;
+  margin: 0 0 15rem auto;
   padding: 0.5rem;
   background-color: rgba(12, 12, 15, 0.65);
   border: 1px solid var(--line);
