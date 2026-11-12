@@ -9,7 +9,7 @@ Project made by **Daniel Chaves Domínguez** (2nd year DAW) for the Web Interfac
 ## Views
 
 - **Home (`index.html`):** 20 cards, one for each topic of the podcast. The search field is only visual, because the project has no JavaScript.
-- **Podcast (`podcast.html`):** the details of the podcast and a table with its 135 episodes, grouped by topic. Each card on the home page takes you to its topic in the table.
+- **Podcast (`podcast.html`):** the details of the podcast and a table with its 136 episodes, grouped by topic. Each card on the home page takes you to its topic in the table.
 - **Episode (`episode.html`):** the description of an episode, with links to YouTube, and an HTML5 audio player.
 
 All the animations and effects are made with CSS.
